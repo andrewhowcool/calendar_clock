@@ -24,7 +24,7 @@ class AlarmReceiver : BroadcastReceiver() {
                 intent!!.getIntExtra("notificationId", 0),
                 Notification.Builder(context).apply {
                     setSmallIcon(android.R.drawable.ic_dialog_info)
-                    setContentTitle("Calender Clock Reminder")
+                    setContentTitle("Calendar Clock Reminder")
                     setContentText(intent.getCharSequenceExtra("reminder"))
                     setWhen(System.currentTimeMillis())
                     setPriority(Notification.PRIORITY_DEFAULT)
